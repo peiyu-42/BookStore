@@ -47,7 +47,6 @@ namespace ISpan.BookStore
 
             try
             {
-                // new UserService().Create(model);
                 new BookCategoryService().Create(dto);
 
                 this.DialogResult = DialogResult.OK;

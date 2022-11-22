@@ -30,7 +30,6 @@ namespace ISpan.BookStore
         }
         private void BindData(int id)
         {
-            // UserVM model = new UserService().Get(id);
             OrderDetailDTO dto = new OrderDetailDAO().Get(id);
 
             // 把DTO轉型為ViewModel
@@ -39,7 +38,6 @@ namespace ISpan.BookStore
             // 再將 viewModel值繫結到各控制項
             orderidTextBox.Text = model.OrderId.ToString();
             bookIdTextBox.Text = model.BookId.ToString();
-            //priceTextBox.Text = model.UnitPrice.ToString();
             quantityTextBox.Text = model.Quantity.ToString();
 
         }
@@ -48,7 +46,6 @@ namespace ISpan.BookStore
         {
             int orderId = orderidTextBox.Text.ToInt(-1);
             int bookId = bookIdTextBox.Text.ToInt(-1);
-            //int listprice = priceTextBox.Text.ToInt(-1);
             int quantity = quantityTextBox.Text.ToInt(-1);
 
             OrderDetailVM model = new OrderDetailVM
@@ -56,7 +53,6 @@ namespace ISpan.BookStore
                 Id = id,
                 OrderId = orderId,
                 BookId = bookId,
-                //UnitPrice = listprice,
                 Quantity = quantity,
             };
 
@@ -64,7 +60,6 @@ namespace ISpan.BookStore
             {
                 {"OrderId", orderidTextBox},
                 {"BookId", bookIdTextBox},
-                //{"UnitPrice", priceTextBox},
                 {"Quantity", quantityTextBox},
             };
 

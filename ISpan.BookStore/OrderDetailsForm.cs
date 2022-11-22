@@ -127,9 +127,8 @@ namespace ISpan.BookStore
             if (dataGridView1.Columns[e.ColumnIndex].Name.Equals("listPriceDataGridViewTextBoxColumn"))
             {
                 e.CellStyle.Format = "###,###,###";
-                //e.CellStyle.SelectionBackColor = Color.Red;
                 e.CellStyle.SelectionForeColor = Color.White;
-                e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+                e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             }
             if (dataGridView1.Columns[e.ColumnIndex].Name.Equals("quantityDataGridViewTextBoxColumn"))
             {

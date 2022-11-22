@@ -73,32 +73,6 @@ namespace ISpan.BookStore
             members = new MemberService().GetPartAccount(account).ToArray();
             BindData(members);
 
-        }
-
-
-        //Boolean textboxHasText = false;//判斷輸入框是否有文本
-        ////textbox獲得焦點
-        //private void Textbox_Enter(object sender, EventArgs e)
-        //{
-        //    if (textboxHasText == false)
-        //        searchTextBox.Text = "";
-
-        //    searchTextBox.ForeColor = Color.Black;
-        //}
-        ////textbox失去焦點
-        //private void Textbox_Leave(object sender, EventArgs e)
-        //{
-        //    if (searchTextBox.Text == "")
-        //    {
-        //        searchTextBox.Text = "帳號的關鍵字查詢";
-        //        searchTextBox.ForeColor = Color.LightGray;
-        //        textboxHasText = false;
-        //    }
-        //    else
-        //    {
-        //        textboxHasText = true;
-        //    }
-                
-        //}
+        }        
     }
 }

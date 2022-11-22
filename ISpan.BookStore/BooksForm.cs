@@ -99,17 +99,8 @@ namespace ISpan.BookStore
         {
             if (dataGridView1.Columns[e.ColumnIndex].Name.Equals("listPriceDataGridViewTextBoxColumn"))
             {
-
-                //decimal money = (decimal)e.Value;
-
                 e.CellStyle.Format = "###,###,###";
-                //e.CellStyle.SelectionBackColor = Color.Red;
-                //e.CellStyle.SelectionForeColor = Color.White;
                 e.CellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-
-                //if (money > 0 && money <= 1000) e.CellStyle.BackColor = Color.LightBlue;
-                //if (money > 1000 && money <= 10000) e.CellStyle.BackColor = Color.LightGreen;
-                //if (money > 10000) e.CellStyle.BackColor = Color.LightPink;
             }
             if (dataGridView1.Columns[e.ColumnIndex].Name.Equals("translatedByDataGridViewTextBoxColumn"))
             {

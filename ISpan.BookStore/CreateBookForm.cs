@@ -98,7 +98,6 @@ namespace ISpan.BookStore
 
             try
             {
-                // new UserService().Create(model);
                 new BookService().Create(dto);
 
                 this.DialogResult = DialogResult.OK;
